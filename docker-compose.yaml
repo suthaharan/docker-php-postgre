@@ -36,6 +36,7 @@ services:
     volumes:
       - ./src:/var/www/laravel_docker
       - ./apache/default.conf:/etc/apache2/sites-enabled/000-default.conf
+      - ./php/php.ini:/usr/local/etc/php/conf.d/wp-php.ini
     depends_on:
       - postgres
     networks: 
